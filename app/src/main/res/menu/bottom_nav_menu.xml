@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tradix.MainActivity">
+    <item
+        android:id="@+id/navigation_fragment1"
+        android:title="Items"
+        android:icon="@drawable/baseline_fastfood_24" /> <!-- Replace ic_fragment1 with your actual icon drawable -->
+
+    <item
+        android:id="@+id/navigation_fragment2"
+        android:title="My Orders"
+        android:icon="@drawable/baseline_icecream_24" /> <!-- Replace ic_fragment2 with your actual icon drawable -->
+    <item
+        android:id="@+id/navigation_fragment3"
+        android:title="My Account"
+        android:icon="@drawable/baseline_person_24" />
+
+    <item
+        android:id="@+id/navigation_fragment4"
+        android:title="LogOut"
+        android:icon="@drawable/baseline_logout_24" /> <!-- Replace ic_fragment4 with your actual icon drawable -->
+</menu>

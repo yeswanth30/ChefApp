@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/yesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Add Food Items"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#6A5ACD"
+        android:textSize="28sp" />
+
+    <View
+        android:id="@+id/bottomBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/yesh"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#001F3F" />
+    <ImageView
+        android:id="@+id/imgFoodItem"
+        android:layout_width="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/bottomBorder"
+        android:layout_height="100dp">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinnerSubcategory"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-494dp"
+        android:layout_toEndOf="@+id/imgFoodItem"
+        android:backgroundTint="#ffa500"
+        android:text="Select Image" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_below="@+id/imgFoodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/edtIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtName"
+        android:layout_marginTop="18dp"
+        android:hint="Ingredients" />
+
+    <EditText
+        android:id="@+id/edtCostPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtIngredients"
+        android:layout_marginTop="18dp"
+        android:hint="Cost Price (Rs.)"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/edtSellingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtCostPrice"
+        android:layout_marginTop="18dp"
+        android:inputType="numberDecimal"
+        android:hint="Selling Price (Rs.)"
+        />
+
+    <EditText
+        android:id="@+id/edtTimeToCook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSellingPrice"
+        android:layout_marginTop="18dp"
+        android:inputType="text"
+        android:hint="Time to Cook (minutes)" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTimeToCook"
+        android:layout_marginTop="28dp"
+        android:entries="@array/categories"
+        android:prompt="@string/select_category" />
+
+    <Spinner
+        android:id="@+id/spinnerSubcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_marginTop="28dp"
+        android:entries="@array/subcategories"
+        android:prompt="@string/select_subcategory" />
+
+    <Button
+        android:id="@+id/btnAddFoodItem"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="Add Food Item" />
+
+
+
+</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

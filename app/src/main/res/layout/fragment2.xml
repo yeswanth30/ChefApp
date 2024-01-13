@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <TextView
+        android:id="@+id/yesh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:text="Orders"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#7F00FF"
+        android:textSize="28sp" />
+
+    <View
+        android:id="@+id/bottomBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/yesh"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#001F3F" />
+
+    <!-- Descriptive text -->
+    <TextView
+        android:id="@+id/yeshsss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottomBorder"
+        android:text="Hurry up and finish the orders, please."
+        android:textColor="#db5a6b"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp" />
+
+
+
+    <!-- RecyclerView for displaying orders -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_below="@+id/yeshsss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+
+</RelativeLayout>

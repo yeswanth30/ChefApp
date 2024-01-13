@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="categories">
+        <item>Starter</item>
+        <item>Main Course</item>
+        <item>Sweet</item>
+        <item>Snacks</item>
+        <item>Soups</item>
+    </string-array>
+
+    <string-array name="subcategories">
+        <item>Veg</item>
+        <item>Non Veg</item>
+    </string-array>
+</resources>
